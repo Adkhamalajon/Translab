@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 480px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+header{
+    width: 100%;
+    display: block;
+    clear: both;
+    background-color: rgb(61, 220, 61);
+    padding-top: 3px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3d3c3c;
+}
+
+.navbar-links{
+    width: 100%;
+    transition: all 1s;
+}
+
+.navbar-links ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;  
+    height: 80%;
+    padding: 0 50px;
+}
+
+.navbar-links li{
+    list-style: none;
+    display: block;
+    width: 60px;
+    margin: 0 5px;
+}
+
+nav .navbar-links li:nth-child(2),nav .navbar-links li:nth-child(3){
+    width: 120px;
+}
+
+nav .navbar-links li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.navbar-top ul{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    background-color: rgb(61, 220, 61);
+    
+    position: absolute;
+    right: 1px;
+    top: 3px;
+}
+
+.navbar-top ul li {
+    list-style: none;
+}
+
+nav #tangle-tag{
+    width: 30px;
+    height: 21px;
+    position:absolute;
+    top: 8px;
+    right: 8px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+nav #tangle-tag span{
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 1.5px;
+}
+
+.emptyblock{
+    display: block;
+    height: 20px;
+    background-color: #ccc;
+}
+
+#signin-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 4vh;
+    
+    
+}
+
+#singinlogo{
+    display: none;
+}
+
+
+#signin-container   #signin-form-container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form{
+    width: 80%;
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+   
+    text-align: left;
+}
+
+form #email-input{
+    margin-top: 1rem;
+}
+
+form #email-input #email-inputfield{
+    width: 100%;
+    height: 2rem;
+    background-color: #ccc;
+    border-radius: 3px;
+
+}
+
+form #password-input{
+    margin-top: 1rem;
+}
+
+form #password-input #input-passwordfield{
+    width: 100%;
+    height: 2rem;
+    background: #ccc;
+    border-radius: 3px;
+}
+
+#check-button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 30px ;
+}
+
+
+#signin-form-container a{
+    margin-top: 5px;
+    display: inline-block;
+}
+
+
+
+
+@media (max-width:835px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav div:nth-child(1) a{
+        padding: 0 35px;
+    }
+    .navbar-links{
+        display: none;
+        margin-top: 40px;
+        width: 100%;
+        transition: all 1s;
+    }
+    .navbar-links ul{
+        
+        display: flex;
+        flex-direction: column  ;
+        width: 100%;
+    }
+
+    .navbar-links ul li{
+        text-align: center;
+        width: 100%;
+        height: 50px;
+    }
+
+    .navbar-links ul li:hover{
+        text-align: center;
+        width: 100%;
+        height: 50px;
+       
+    }
+
+    nav .navbar-links li:nth-child(2),nav .navbar-links li:nth-child(3){
+        width: 100%;
+    }
+
+    .navbar-links ul li a{
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .navbar-links ul li a:hover{
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+        width: 100%;
+        height: 50px;
+        background-color: #555;
+        border: 1px solid #fff;
+    }
+    nav div:nth-child(3){
+        display: none;
+    }
+
+    nav:first-child img{
+        display: none;
+    }
+
+    
+    nav div:first-child div{
+        display: block;
+        height: 40px;
+    }
+    
+
+    nav #tangle-tag{
+        display: flex;
+    }
+
+    
+
+    .navbar-links.active{
+        display: flex;
+        margin-top: 20px;
+    }
+
+    #signin-container.active{
+        display: none;
+    }
+
+    #singinlogo{
+        display: block;
+    }
+    
+}
+
+
+
+
